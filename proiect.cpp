@@ -1,6 +1,7 @@
 #include<iostream>
 #include<math.h>
 #include<cstring>
+
 using namespace std;
 
 typedef int sir[100];
@@ -20,6 +21,7 @@ void succ(sir x, int k, int &as)
 	}
 	else as = 0;
 }
+
 void valid(sir x, int k, int &ev)
 {
 	ev = 1;
@@ -77,9 +79,9 @@ int main(void)
 		} while (as && !ev);
 		if (as)
 			if (k == 6) afis(x, k);
-			else
+		    else
 			{
-				k = k + 1; x[k] = 0;
+			     k = k + 1; x[k] = 0;
 			}
 		else k = k - 1;
 	}
